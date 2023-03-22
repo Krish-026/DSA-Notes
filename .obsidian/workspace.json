@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "813b96a679a59a49",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d0cc9bbf12111f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec6754ad4fb04600",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Binary Search/Binary Search Topics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "887c4f6312dd95d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca2e1debaffee657",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54a342c17a7021b9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f1509ba932662c11",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "470ebb79e552abc5",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0c90c3767a53b3bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7bff72f7abc657a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3becf9188a522aa0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Binary Search/Binary Search Topics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e7f57207d8069dbe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Binary Search/Binary Search Topics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "abe2fc9dcb21a52d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d5f82f8d9591cfbd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Binary Search/Binary Search Topics.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ec6754ad4fb04600",
+  "lastOpenFiles": [
+    "README.md",
+    "Binary Search/Sorted Rotated Array.md",
+    "Binary Search/Sorted Rotated Array 2.md",
+    "Binary Search/Binary Search Topics.md",
+    "Binary Search"
+  ]
+}
