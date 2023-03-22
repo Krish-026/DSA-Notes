@@ -11,12 +11,8 @@
             "id": "ec6754ad4fb04600",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Binary Search/Binary Search Topics.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binary Search/Binary Search Topics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Binary Search/Binary Search Topics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Binary Search/Binary Search Topics.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,12 +138,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec6754ad4fb04600",
+  "active": "54a342c17a7021b9",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "2023-03-23.md",
+    "Test/The 8 Most Important Hotkeys in Obsidian.md",
+    "Test/The 6 Most Important Keys to Typing in Markdown.md",
+    "Test/The 8 Most Important Settings in Obsidian.md",
+    "Binary Search/Binary Search Topics.md",
+    "Test",
+    "New folder",
     "README.md",
     "Binary Search/Sorted Rotated Array.md",
     "Binary Search/Sorted Rotated Array 2.md",
-    "Binary Search/Binary Search Topics.md",
     "Binary Search"
   ]
 }
