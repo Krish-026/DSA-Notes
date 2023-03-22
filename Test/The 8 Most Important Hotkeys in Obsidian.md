@@ -1,5 +1,5 @@
 
-1. ##Open Link in edit mode ( ctrl+click on link) [[The 8 Most Important Hotkeys in Obsidian]]
+1. ##Open Link in edit mode ( ctrl+click on link) [[The 6 Most Important Keys to Typing in Markdown]]
 2. Toggle edit/preview (ctrl - e)
 3.  Open Quick Switcher (ctrl - o) and press esc for exit
 4. Search (ctrl - shift - f)
