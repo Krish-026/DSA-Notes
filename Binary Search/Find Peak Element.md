@@ -13,3 +13,20 @@ Case 3 : mid lies on the left. ( Observation : Our peak element search space is 
 
 so, the code becomes
 
+```cpp
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int l = 0, h = nums.size()-1, n = nums.size();
+        while(l <= h){
+            int mid = l + (h-l)/2;
+            if((mid == l or nums[mid] > nums[mid-1]) 
+               and (mid == h or nums[mid] > nums[mid+1]))
+                return mid;
+                else if(nums[mid+1] > nums[mid]) l = mid + 1;
+                else h = mid - 1;
+        }
+        return -1;
+    }
+};
+```
