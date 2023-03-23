@@ -4,6 +4,7 @@ As, the subportions of the array are increasing/decreasing ( only then we would 
 This is an interesting part.
 
 For a mid element, there could be three possible cases :  
+
 ![[Pasted image 20230323121938.png]]
 
 Case 1 : mid lies on the right of our result peak ( Observation : Our peak element search space is leftside )  
