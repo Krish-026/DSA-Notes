@@ -4,7 +4,7 @@ As, the subportions of the array are increasing/decreasing ( only then we would 
 This is an interesting part.
 
 For a mid element, there could be three possible cases :  
-![image](https://assets.leetcode.com/users/images/d2fdc688-542e-434c-8969-f151b2286313_1624387000.3221495.png)
+![[Pasted image 20230323121938.png]]
 
 Case 1 : mid lies on the right of our result peak ( Observation : Our peak element search space is leftside )  
 Case 2 : mid is equal to the peak element ( Observation : mid element is greater than its neighbors )  
