@@ -12,3 +12,4 @@ Case 2 : mid is equal to the peak element ( Observation : mid element is greater
 Case 3 : mid lies on the left. ( Observation : Our peak element search space is rightside )
 
 so, the code becomes
+
