@@ -16,7 +16,7 @@ public:
 };
 ```
 
-Another Approach
+## Another Approach
 
 Use binary search.
 
