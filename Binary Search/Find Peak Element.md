@@ -5,8 +5,6 @@ This is an interesting part.
 
 For a mid element, there could be three possible cases :  
 
-![[Pasted image 20230323121938.png]]
-
 Case 1 : mid lies on the right of our result peak ( Observation : Our peak element search space is leftside )  
 Case 2 : mid is equal to the peak element ( Observation : mid element is greater than its neighbors )  
 Case 3 : mid lies on the left. ( Observation : Our peak element search space is rightside )
