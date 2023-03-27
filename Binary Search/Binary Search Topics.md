@@ -3,3 +3,4 @@
 3. Find Peak Element - [[Find Peak Element]] 
 4. Find Max element in Rotated Sorted Array [[Find Max or Min element in Rotated Sorted Array]] 
 5. Search in 2-D Matrix - [[Search in 2-D Matrix]] 
+6. Capacity To Ship Packages Within D Days [[1011. Capacity To Ship Packages Within D Days]]
