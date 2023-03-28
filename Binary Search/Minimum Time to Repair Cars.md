@@ -1,5 +1,7 @@
 #CST101-28-03-2023 
 #28-03-2023 
+[[Capacity To Ship Packages Within D Days]]
+
 
 You are given an integer array `ranks` representing the **ranks** of some mechanics. ranksi is the rank of the ith mechanic. A mechanic with a rank `r` can repair n cars in `r * n2` minutes.
 
