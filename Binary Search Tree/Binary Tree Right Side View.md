@@ -50,3 +50,24 @@ public:
     }
 };
 ```
+
+## Approach DFS
+
+```cpp
+class Solution {
+private:
+    void dfs(TreeNode* root, vector<int>&ans, int level){
+        if(!root) return;
+        if(ans.size() == level) ans.push_back(root->val);
+        dfs(root->right, ans, level+1);
+        dfs(root->left, ans, level+1);
+    }
+public:
+    vector<int> rightSideView(TreeNode* root) {
+        if(!root) return {};
+        vector<int>ans;
+        dfs(root, ans, 0);
+        return ans;
+    }
+};
+```
