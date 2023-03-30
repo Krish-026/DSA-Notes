@@ -3,3 +3,4 @@
 3. Balanced Binary Tree [[Balanced Binary Tree]] 
 4. Diameter of Binary Tree [[Diameter of Binary Tree]]
 5. Binary Tree Maximum Path Sum [[Binary Tree Maximum Path Sum]]
+6. Same Tree [[Same Tree]]
