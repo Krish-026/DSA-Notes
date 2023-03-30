@@ -17,7 +17,7 @@ A **leaf** node is a node with no children.
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/num1tree.jpg)
 
-**Input:** root = [1,2,3]
+**Input:** root = `[1,2,3]`
 **Output:** 25
 **Explanation:**
 The root-to-leaf path `1->2` represents the number `12`.
@@ -28,7 +28,7 @@ Therefore, sum = 12 + 13 = `25`.
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/num2tree.jpg)
 
-**Input:** root = [4,9,0,5,1]
+**Input:** root = `[4,9,0,5,1]`
 **Output:** 1026
 **Explanation:**
 The root-to-leaf path `4->9->5` represents the number 495.
@@ -41,3 +41,31 @@ Therefore, sum = 495 + 491 + 40 = `1026`.
 -   The number of nodes in the tree is in the range `[1, 1000]`.
 -   `0 <= Node.val <= 9`
 -   The depth of the tree will not exceed `10`.
+
+
+## Approach
+
+```cpp
+class Solution {
+private:
+    bool isLeaf(TreeNode* root){
+        return root->left == NULL and root->right== NULL;
+    }
+    void dfs(TreeNode* root, int& sum, int num = 0){
+        if(root == NULL) return;
+        if(isLeaf(root)){
+            num = (num*10) + root->val;
+            sum += num;
+            return;
+        }
+        dfs(root->left, sum, (num*10) + root->val);
+        dfs(root->right, sum, (num*10) + root->val);
+    }
+public:
+    int sumNumbers(TreeNode* root) {
+        int sum = 0;
+        dfs(root, sum);
+        return sum;
+    }
+};
+```
