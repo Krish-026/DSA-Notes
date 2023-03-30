@@ -36,3 +36,37 @@ So one correct course order is `[0,1,2,3]`. Another correct ordering is `[0,2,1,
 -   All the pairs `[ai, bi]` are **distinct**.
 
 
+## Approach
+
+```cpp
+class Solution {
+private:
+    bool isCycle(vector<int>adj[], int src, vector<int>&vis, vector<int>&ans){
+        if(vis[src] == 1) return true;
+        if(vis[src] == 0){
+            vis[src] = 1;
+            for(int i : adj[src]){
+                if(isCycle(adj, i, vis, ans)) return false;
+            }
+        }
+        if(vis[src] != 2) ans.push_back(src);
+        vis[src] = 2;
+        return false;
+    }
+public:
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int>ans, adj[numCourses];
+        for(vector<int> x: prerequisites){
+            adj[x[1]].push_back(x[0]);
+        }
+        vector<int>visited(numCourses, 0);
+        for(int i = 0; i < numCourses; ++i){
+            if(visited[i] != 2){
+                if(isCycle(adj, i, visited, ans)) return {};
+            }
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};
+```
