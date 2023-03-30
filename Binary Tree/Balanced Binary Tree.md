@@ -3,7 +3,7 @@
 
 
 
-Given a binary tree, determine if it is **height-balanced**.
+Given[[Binary Tree Maximum Path Sum]] a binary tree, determine if it is **height-balanced**.
 
 **Example 1:**
 
