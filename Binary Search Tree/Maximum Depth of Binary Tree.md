@@ -36,3 +36,32 @@ public:
     }
 };
 ```
+
+## Another Approach
+
+
+```cpp
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if(!root)
+            return 0;
+        int level = 0;
+        queue<TreeNode*>q;
+        q.push(root);
+        while(!q.empty()){
+            int size = q.size();
+            ++level;
+            for(int i = 0; i < size; ++i){
+                TreeNode* temp = q.front(); q.pop();
+                if(temp->left)
+                    q.push(temp->left);
+                if(temp->right)
+                    q.push(temp->right);
+            }
+        }
+        return level;
+    }
+};
+```
+
