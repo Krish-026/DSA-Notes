@@ -37,4 +37,58 @@ Initially, all next pointers are set to `NULL`.
 
 -   You may only use constant extra space.
 -   The recursive approach is fine. You may assume implicit stack space does not count as extra space for this problem.
-- 
+
+
+```cpp
+class Solution {
+public:
+    Node* connect(Node* root) {
+        Node* temp = root;
+        if(root == NULL)
+            return root;
+        queue<Node*>q;
+        q.push(temp);
+        while(!q.empty()){
+            size_t size = q.size();
+            Node* prev = NULL;
+            for(int i = 0; i < size; ++i){
+                temp = q.front();
+                q.pop();
+                if(prev == NULL)
+                    prev = temp;
+                else{
+                    prev->next = temp;
+                    prev = temp;
+                }
+                if(temp->left)
+                    q.push(temp->left);
+                if(temp->right)
+                    q.push(temp->right);
+            }
+        }
+        return root;
+    }
+};
+```
+
+
+
+```cpp
+class Solution {
+public:
+    Node* connect(Node* root){
+        if(!root) return root;
+        dfs(root->left, root->right);
+        return root;
+    }
+
+    void dfs(Node* left, Node* right){
+        if(!left) return;
+        left->next = right;
+        dfs(left->left, left->right);
+        dfs(left->right, right->left);
+        dfs(right->left, right->right);
+    }
+};
+```
+
