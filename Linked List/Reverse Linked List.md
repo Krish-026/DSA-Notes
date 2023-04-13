@@ -28,3 +28,24 @@ Given the `head` of a singly linked list, reverse the list, and return _the r
 -   `-5000 <= Node.val <= 5000`
 
 **Follow up:** A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+
+
+```cpp
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(!head or !head->next)
+            return head;
+        ListNode* prev = NULL, *cur = head, *fast = head->next;
+        while(fast){
+            cur->next = prev;
+            prev = cur;
+            cur = fast;
+            fast = fast->next;
+        }
+        cur->next = prev;
+        return cur;
+    }
+};
+```
