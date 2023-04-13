@@ -37,3 +37,57 @@ There is a cycle in a linked list if there is some node in the list that can be 
 -   `pos` is `-1` or a **valid index** in the linked-list.
 
 **Follow up:** Can you solve it using `O(1)` (i.e. constant) memory?
+
+
+
+```cpp
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        if(head==NULL) return NULL;
+        ListNode*slow=head,*fast=head;
+        bool isCycle = false;
+        
+        while(fast->next!=NULL && fast->next->next!=NULL){
+            slow=slow->next;
+            fast=fast->next->next;
+            if(slow==fast){ //meet point
+                isCycle = true;
+                break;
+            }
+        }
+        if(!isCycle) return NULL;
+        fast = head;
+        while(slow != fast){
+            slow = slow->next;
+            fast = fast->next;
+        }
+        return slow;
+    }
+};
+```
+
+```cpp
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        if(head==NULL) return NULL;
+        ListNode*slow=head,*fast=head,*curr=head;
+        
+        while(fast->next!=NULL && fast->next->next!=NULL){
+		    slow=slow->next;
+	        fast=fast->next->next;
+	        if(slow==fast){ //meet point
+		        while(curr!=fast){
+		            fast=fast->next;
+	            curr=curr->next;
+        }
+        return fast;
+
+        }
+        }
+        return NULL;
+
+    }
+};
+```
