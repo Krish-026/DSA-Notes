@@ -80,14 +80,14 @@ public:
 	        if(slow==fast){ //meet point
 		        while(curr!=fast){
 		            fast=fast->next;
-	            curr=curr->next;
-        }
-        return fast;
-
-        }
+		            curr=curr->next;
+		        }
+		        return fast;
+	        }
         }
         return NULL;
 
     }
 };
 ```
+
