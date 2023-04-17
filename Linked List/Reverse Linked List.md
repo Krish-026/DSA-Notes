@@ -4,7 +4,7 @@
 
 Given the `head` of a singly linked list, reverse the list, and return _the reversed list_.
 
-**Example 1:**
+**Example 1:[[Reverse Linked List]]**
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg)
 
