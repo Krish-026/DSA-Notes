@@ -20,7 +20,7 @@ Note the bottom corner is not colored 2, because it is not 4-directionally conne
 
 **Input:** image = `[[0,0,0],[0,0,0]]`, sr = 0, sc = 0, color = 0
 **Output:**` [[0,0,0],[0,0,0]]`
-**Explanation:** The starting pixel is already colored 0, so no changes are made to the image.
+**Explanation:** The starting pixel is already <h1 style = "color: red">colored<h1> 0, so no changes are made to the image.
 
 ```cpp
 class Solution {
