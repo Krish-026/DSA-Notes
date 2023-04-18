@@ -65,3 +65,37 @@ Explanation: The two lists do not intersect, so return null.
 -   `intersectVal == listA[skipA] == listB[skipB]` if `listA` and `listB` intersect.
 
 **Follow up:** Could you write a solution that runs in `O(m + n)` time and use only `O(1)` memory?
+
+
+```cpp
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        if(!headA or !headB) return NULL;
+        int lenA = 0, lenB = 0;
+        ListNode* cur = headA;
+        while(cur){
+            cur = cur->next;
+            ++lenA;
+        }
+        cur = headB;
+        while(cur){
+            cur = cur->next;
+            ++lenB;
+        }
+        while(lenA > lenB){
+            headA = headA->next;
+            --lenA;
+        }
+        while(lenA < lenB){
+            headB = headB->next;
+            --lenB;
+        }
+        while(headA != headB){
+            headA = headA->next;
+            headB = headB->next;
+        }
+        return headA;
+    }
+};
+```
