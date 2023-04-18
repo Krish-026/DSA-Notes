@@ -44,3 +44,46 @@ Your code will **only** be given the `head` of the original linked list.
 -   `0 <= n <= 1000`
 -   `-104 <= Node.val <= 104`
 -   `Node.random` is `null` or is pointing to some node in the linked list.
+
+
+```cpp
+class Solution {
+public:
+    Node* copyRandomList(Node* head) {
+        if(!head) return head;
+        // Create new List
+        Node* cur = head;
+        while(cur != NULL){
+            Node* copy = new Node(cur->val);
+            copy->next = cur->next;
+            cur->next = copy;
+            cur = cur->next->next;
+        }
+
+        // set random pointer
+
+        cur = head;
+        while(cur){
+            if(cur->random != NULL){
+                cur->next->random = cur->random->next;
+            }
+            cur = cur->next->next;
+        }
+
+        // Split
+        cur = head;
+        Node* copyHead = cur->next;
+        Node* copycur = copyHead;
+
+        while(cur){
+            //
+            cur->next = cur->next->next;
+            if(copycur->next == NULL) break;
+            copycur->next = copycur->next->next;
+            cur = cur->next;
+            copycur = copycur->next;
+        }
+        return copyHead;
+    }
+};
+```
