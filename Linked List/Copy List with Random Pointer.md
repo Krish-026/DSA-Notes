@@ -36,8 +36,8 @@ Your code will **only** be given the `head` of the original linked list.
 
 **![](https://assets.leetcode.com/uploads/2019/12/18/e3.png)**
 
-**Input:** head = [[3,null],[3,0],[3,null]]
-**Output:** [[3,null],[3,0],[3,null]]
+**Input:** head = `[[3,null],[3,0],[3,null]]`
+**Output:** `[[3,null],[3,0],[3,null]]`
 
 **Constraints:**
 
