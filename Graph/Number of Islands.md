@@ -9,7 +9,17 @@ An **island** is surrounded by water and is formed by connecting adjacent land
 
 **Example 1:**
 
-**Input:** grid = 
+**Input:** grid = ```[
+
+  ["1","1","1","1","0"],
+
+  ["1","1","0","1","0"],
+
+  ["1","1","0","0","0"],
+
+  ["0","0","0","0","0"]
+
+]```
 **Output:** 1
 
 **Example 2:**
