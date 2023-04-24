@@ -81,3 +81,62 @@ public:
     }
 };
 ```
+
+
+## BFS
+
+```cpp
+class Solution {
+private:
+    void bfs(vector<vector<char>>&grid, int i, int j){
+        int X[] = {-1, 0, 1, 0};
+        int Y[] = {0, 1, 0, -1};
+        queue<pair<int, int>>q;
+        grid[i][j] = '2';
+        q.push({i, j});
+        while(!q.empty()){
+            int row = q.front().first;
+            int col = q.front().second;
+            q.pop();
+            
+            for(int i = 0; i < 4; ++i){
+                int nRow = row + X[i];
+                int nCol = col + Y[i];
+                if(nRow >= 0 and nRow < m and nCol >= 0 and nCol < n
+                    and grid[nRow][nCol] == '1'){
+                        grid[nRow][nCol] = '2';
+                        q.push({nRow, nCol});
+                    }
+            }
+            
+        }
+    }
+    void dfs(vector<vector<char>>& grid, int row, int col){
+        grid[row][col] = '2';
+        int X[] = {-1, 0, 1, 0};
+        int Y[] = {0, 1, 0, -1};
+        for(int i = 0; i < 4; ++i){
+            int nRow = row + X[i];
+            int nCol = col + Y[i];
+            if(nRow >= 0 and nRow < m and nCol >= 0 and nCol < n
+                and grid[nRow][nCol] == '1')
+                dfs(grid, nRow, nCol);
+        }
+    }
+public:
+    int m , n;
+    int numIslands(vector<vector<char>>& grid) {
+        int ans = 0;
+        m = grid.size(), n = grid[0].size();;
+        for(int i = 0; i < m; ++i){
+            for(int j = 0; j < n; ++j){
+                if(grid[i][j] == '1'){
+                    bfs(grid, i, j);
+                    ++ans;
+                }
+            }
+        }
+        return ans;
+    }
+};
+```
